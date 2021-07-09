@@ -6,16 +6,23 @@ Fix the Issue (OS can not detect HDMI monitors)
 To fix that Issue:
 
 1- Download Display_on 
+
 2- chmod +x Display_on
+
 3- Press cltr + alt + (f1 or f2) #to run (X terminal) 
+
 4- sudo ./Display_on
+
 5- Reboot
 
 Display_on:
 
 #!/bin/bash
+
 sudo apt install linux-headers-$(uname -r)
+
 sudo echo "blacklist nouveau
+
 options nouveau modeset=0" > /etc/modprobe.d/blacklist-nouveau.conf
 
 sudo update-initramfs -u
