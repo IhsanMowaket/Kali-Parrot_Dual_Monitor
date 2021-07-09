@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo rm /etc/modprobe.d/blacklist-nouveau.conf
+
+sudo rm /etc/X11/xorg.conf.d/xorg.conf
+
+sudo rm /usr/share/gdm/greeter/autostart/optimus.desktop
+
+sudo rm /etc/xdg/autostart/optimus.desktop
+
